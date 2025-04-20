@@ -95,6 +95,7 @@ services:
       - BREVO_SMTP_LOGIN=${BREVO_SMTP_LOGIN}
       - BREVO_SMTP_PASSWORD=${BREVO_SMTP_PASSWORD}
       - NODEBB_SERVICE_URL=${NODEBB_SERVICE_URL:-http://nodebb:4567}
+      - NODEBB_BEARER_TOKEN=${NODEBB_BEARER_TOKEN:-changeMe}
     networks:
       - app-network
     depends_on:
